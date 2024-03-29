@@ -1,0 +1,41 @@
+#container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#sx{
+border: 1rem;
+background-color: aqua;
+}
+
+
+#item{
+  margin-bottom: 0.1rem;
+  
+}
+#data{
+  margin-bottom: 0.1rem;
+  margin-top: 1rem;
+
+}
+
+#btn{
+ margin-top: 0.5rem;
+  border: 1px solid rgba(10, 112, 153, 0.904);
+  
+color: rgba(10, 112, 153, 0.904);
+}
+
+
+#input2{
+
+align-items:end ;
+}
+
+.task{
+  list-style: none;
+}
+
+.classeXSbarrare{
+  text-decoration: line-through;
+}
