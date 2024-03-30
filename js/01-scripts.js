@@ -64,4 +64,4 @@ elUl1.addEventListener("click", function (event) {
   }
 });
 
-//ciaoooo
+//Ho soltanto aggiunto le ultime cose di CSS: gli input hanno la stessa lunghezza mentre il bottone è inserito sulla DX (invece che SX) ed ha bordi leggermente smussati.

@@ -1,3 +1,6 @@
+body {
+  font-family: sans-serif;
+}
 #container{
   display: flex;
   justify-content: space-evenly;
@@ -5,7 +8,8 @@
 
 #sx{
 border: 1rem;
-background-color: aqua;
+
+
 }
 
 
@@ -16,20 +20,27 @@ background-color: aqua;
 #data{
   margin-bottom: 0.1rem;
   margin-top: 1rem;
+  
 
 }
 
 #btn{
  margin-top: 0.5rem;
-  border: 1px solid rgba(10, 112, 153, 0.904);
-  
-color: rgba(10, 112, 153, 0.904);
+ border: 1px solid rgba(10, 112, 153, 0.904);
+ float: right;
+ color: rgba(10, 112, 153, 0.904);
+ border-radius: 5%;
 }
 
-
+#input1{
+  width: max-content;
+  width: 100%;
+  box-sizing: border-box;
+}
 #input2{
-
-align-items:end ;
+  width: max-content;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .task{
@@ -39,3 +50,4 @@ align-items:end ;
 .classeXSbarrare{
   text-decoration: line-through;
 }
+
