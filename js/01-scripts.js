@@ -32,11 +32,11 @@ let elUl1 = document.querySelector("#ul1");
 
 function stampaForm() {
   let nuovoLi = document.createElement("li");
-  nuovoLi.className = "task";
+  nuovoLi.className = "task animate__backInUp";
   let valore1 = elInput1.value;
   let valore2 = elInput2.value;
   if (!valore1 == "" && !valore2 == "") {
-    nuovoLi.innerHTML += `<input type="checkbox" id="checkbox"> <span>${valore1}</span> <span class="span2">${valore2}</span>  <button class="bottoneEdit">Edit</button> <button class="bottoneDelete">Delete</button>`;
+    nuovoLi.innerHTML += `<input type="checkbox" id="checkbox"> <span>${valore1}</span> <span class="span2">${valore2}</span> <i class="fa-regular fa-pen-to-square bottoneEdit"></i><i class="fa-solid fa-trash-can bottoneDelete"></i> `;
     elUl1.appendChild(nuovoLi);
     elInput1.value = "";
     elInput2.value = "";
@@ -61,7 +61,20 @@ elUl1.addEventListener("click", function (event) {
   } else if(elementoCliccato.matches('#checkbox')){
     let spanDaSbarrare = elementoCliccato.closest(".task").querySelector('span');
     spanDaSbarrare.classList.toggle('classeXSbarrare');
+
   }
+  
+  else
+  { let spanDaSbarrare = elementoCliccato.closest(".task").querySelector('span');
+  spanDaSbarrare.classList.toggle('classeXSbarrare');
+  let checkbox = elementoCliccato.closest(".task").querySelector('#checkbox');
+  checkbox.checked = !checkbox.checked;
+
+}
 });
+let ogniLi = document.querySelector('.task');
+ogniLi.addEventListener('click', function () {
+  
+})
 
 //Ho soltanto aggiunto le ultime cose di CSS: gli input hanno la stessa lunghezza mentre il bottone è inserito sulla DX (invece che SX) ed ha bordi leggermente smussati.

@@ -1,17 +1,37 @@
 body {
-  font-family: sans-serif;
+  font-family: "Workbench", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+  background-color: rgb(209, 195, 195);
 }
+.workbench {
+  font-family: "Workbench", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+}
+
 #container{
   display: flex;
-  justify-content: space-evenly;
+  gap: 4rem;
+  width: 990px;
+  margin: auto;
 }
 
-#sx{
-border: 1rem;
+#containerSx {
 
-
+flex: 1;
 }
-
+#containerDx{
+  flex: 2;
+}
 
 #item{
   margin-bottom: 0.1rem;
@@ -30,6 +50,12 @@ border: 1rem;
  float: right;
  color: rgba(10, 112, 153, 0.904);
  border-radius: 5%;
+ padding: 8px 12px;
+ background-color: transparent;
+
+}
+#btn:hover{
+  cursor: pointer;
 }
 
 #input1{
@@ -45,9 +71,54 @@ border: 1rem;
 
 .task{
   list-style: none;
+  display: flex;
+  border-bottom: 1px solid #191414;
+  padding: 0.5rem;
+  align-items: center;
+  transition: all 1s ease-in-out;
+  
+
+}
+.task:hover{
+  cursor: pointer;
+  background-color: rgb(194, 127, 127);
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 .classeXSbarrare{
   text-decoration: line-through;
 }
+
+.span2{
+  /*margin-left: 8rem; */
+  margin-left: auto;
+  margin-right: 20px;
+
+ 
+ 
+}
+
+#ul1{
+ 
+  padding-inline-start: 0px;
+}
+
+.bottoneDelete{
+  color: red;
+  border: 1px solid red;
+  
+}
+.bottoneEdit{
+  color: green;
+}
+
+i{
+  padding: 9px;
+  border: 1px solid green;
+  border-radius: 15%;
+  margin-right: 12px;
+}
+
 
